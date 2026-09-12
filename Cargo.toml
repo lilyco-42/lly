@@ -1,6 +1,6 @@
 [package]
 name = "lly"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 description = "lilyco 工具包：EdgeTTS / Whisper 转写 / 统一文件处理（Radxa 算力平台）"
 license = "MIT OR Apache-2.0"
