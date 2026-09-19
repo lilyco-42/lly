@@ -6,8 +6,9 @@ description = "lilyco 工具包：EdgeTTS / Whisper 转写 / 统一文件处理�
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-lilyco = { git = "https://github.com/lilyco-42/lilyco", default-features = false }
-lilyco-core = { git = "https://github.com/lilyco-42/lilyco" }
+# 版本锁定（P0 契约加固）：跟随 lilyco main fe28262f（安全门+遥测+硬件桥就位），升级需显式改此 rev
+lilyco = { git = "https://github.com/lilyco-42/lilyco", rev = "fe28262f575c52bb977c282f4992093f8562cb90", default-features = false }
+lilyco-core = { git = "https://github.com/lilyco-42/lilyco", rev = "fe28262f575c52bb977c282f4992093f8562cb90" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 rustls = { version = "0.23", features = ["ring"] }
